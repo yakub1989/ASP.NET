@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoolChat", "CoolChat\CoolChat.csproj", "{EB021C89-851F-4D19-8F7B-9C3FFB73027D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB021C89-851F-4D19-8F7B-9C3FFB73027D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB021C89-851F-4D19-8F7B-9C3FFB73027D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB021C89-851F-4D19-8F7B-9C3FFB73027D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB021C89-851F-4D19-8F7B-9C3FFB73027D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C00F88EF-B836-4C2E-BB9E-07CE515F9DF4}
+	EndGlobalSection
+EndGlobal

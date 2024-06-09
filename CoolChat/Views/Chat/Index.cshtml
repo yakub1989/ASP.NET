@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Chat Room";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form id="joinRoomForm">
+    <div>
+        <label for ="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname" required/>
+    </div>
+    <div>
+        <label for="room">Room:</label>
+        <select id="room" name="room" required>
+            <option value="Room1">Room 1</option>
+            <option value="Room2">Room 2</option>
+            <option value="Room3">Room 3</option>
+            <option value="Room4">Room 4</option>
+            <option value="Room5">Room 5</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit">Join Room</button>
+    </div>
+</form>
+
+<script>
+    document.getElementById("joinRoomForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get selected room and nickname
+        var room = document.getElementById("room").value;
+        var nickname = document.getElementById("nickname").value;
+
+        // Redirect user to the chosen room
+        window.location.href = "/ChatRoom/" + room + "?nickname=" + nickname;
+    });
+</script>

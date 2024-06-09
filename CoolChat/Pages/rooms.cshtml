@@ -1,0 +1,53 @@
+@page "/ChatRoom/{room}"
+<h2>Welcome to @RouteData.Values["room"]</h2>
+<div id="messagesList" style="height: 400px; width: 650px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;"></div>
+<input type="text" id="messageInput" style="width: 600px; padding: 5px; margin-right: 10px;" placeholder="Enter message:" />
+<button onclick="sendMessage()" style="padding: 5px;">Send</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.7/signalr.min.js"></script>
+<script>
+    function getQueryParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    const connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+
+    connection.on("LoadMessageHistory", (messages) =>
+    {
+        messages.forEach(msg =>
+        {
+            const div = document.createElement("div");
+            div.textContent = `${msg.user}: ${msg.message}`;
+            document.getElementById("messagesList").appendChild(div);
+        });
+    });
+
+    connection.on("ReceiveMessage", (user, message) => {
+        const msg = document.createElement("div");
+        msg.textContent = `${user}: ${message}`;
+        document.getElementById("messagesList").appendChild(msg);
+    });
+
+    connection.start()
+    .then(() => {
+        // Connection established, now join the default room
+        const defaultRoom = "@RouteData.Values["room"]";
+        connection.invoke("JoinRoom", defaultRoom).catch(err => console.error(err.toString()));
+    })
+    .catch(err => console.error(err.toString()));
+
+    function sendMessage(){
+        const user = getQueryParam("nickname"); // Retrieve nickname from URL query parameters
+        const message = document.getElementById("messageInput").value;
+        const room = "@RouteData.Values["room"]";
+        connection.invoke("SendMessage", user, message, room).catch(err => console.error(err.toString()));
+        document.getElementById("messageInput").value = "";
+    }
+    function handleKeyDown(event) {
+        if (event.key === "Enter") {
+            event.preventDefault(); // Prevent form submission
+            sendMessage();
+        }
+    }
+</script>
