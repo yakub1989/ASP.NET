@@ -136,3 +136,4 @@ D:\Media\ATH\Semestr_6\ASP.NET\CoolChat\obj\Debug\net8.0\refint\CoolChat.dll
 D:\Media\ATH\Semestr_6\ASP.NET\CoolChat\obj\Debug\net8.0\CoolChat.pdb
 D:\Media\ATH\Semestr_6\ASP.NET\CoolChat\obj\Debug\net8.0\CoolChat.genruntimeconfig.cache
 D:\Media\ATH\Semestr_6\ASP.NET\CoolChat\obj\Debug\net8.0\ref\CoolChat.dll
+D:\Media\ATH\Semestr_6\ASP.NET\CoolChat\obj\Debug\net8.0\CoolChat.sourcelink.json
