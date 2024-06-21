@@ -2,10 +2,6 @@
     ViewData["Title"] = "Chat Room";
 }
 
-<head>
-    <link rel="stylesheel" type="text/css" href="~/css/site.css"/>
-</head>
-
 <h2>@ViewData["Title"]</h2>
 
 <form id="joinRoomForm">
@@ -15,13 +11,7 @@
     </div>
     <div>
         <label for="room">Room:</label>
-        <select id="room" name="room" required>
-            <option value="Room1">Room 1</option>
-            <option value="Room2">Room 2</option>
-            <option value="Room3">Room 3</option>
-            <option value="Room4">Room 4</option>
-            <option value="Room5">Room 5</option>
-        </select>
+        <input type="text" id="room" name="room" required/>
     </div>
     <div>
         <button type="submit">Join Room</button>

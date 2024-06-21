@@ -38,5 +38,10 @@ namespace ChatApp.Hubs
         {
             await Groups.RemoveFromGroupAsync(Context.ConnectionId, room);
         }
+        public async Task LoadAllRoomsMessages()
+        {
+            var messages = await _context.ChatMessages.ToListAsync();
+            await Clients.Caller.SendAsync("LoadAllRoomsMessages", messages);
+        }
     }
 }
