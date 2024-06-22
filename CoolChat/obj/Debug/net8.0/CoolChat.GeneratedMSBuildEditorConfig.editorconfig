@@ -9,47 +9,51 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CoolChat
 build_property.RootNamespace = CoolChat
-build_property.ProjectDir = D:\Media\ATH\Semestr_6\ASP.NET\CoolChat\
+build_property.ProjectDir = d:\Media\ATH\Semestr_6\ASP.NET\CoolChat\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Media\ATH\Semestr_6\ASP.NET\CoolChat
+build_property.MSBuildProjectDirectory = d:\Media\ATH\Semestr_6\ASP.NET\CoolChat
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Pages/rooms.cshtml]
+[d:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Pages/rooms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccm9vbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Chat/Index.cshtml]
+[d:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Chat/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Home/Index.cshtml]
+[d:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Home/Privacy.cshtml]
+[d:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Shared/Error.cshtml]
+[d:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/_ViewImports.cshtml]
+[d:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/_ViewStart.cshtml]
+[d:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Shared/_Layout.cshtml]
+[d:/Media/ATH/Semestr_6/ASP.NET/CoolChat/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-wwr0av43mg

@@ -1,0 +1,64 @@
+@model CoolChat.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Chat Room";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form id="loginForm" asp-controller="Account" asp-action="Login" method="post">
+    <div>
+        <label asp-for="Username">Username:</label>
+        <input asp-for="Username" id="username" name="username" required />
+        <span asp-validation-for="Username"></span>
+    </div>
+    <div>
+        <label asp-for="Password">Password:</label>
+        <input asp-for="Password" id="password" name="password" type="password" required />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label for="room">Room:</label>
+        <input type="text" id="room" name="room" required />
+    </div>
+    <div>
+        <button type="submit">Join Room</button>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Serialize form data into JSON format
+            var formData = {
+                username: document.getElementById("username").value,
+                password: document.getElementById("password").value
+            };
+
+            // Send login credentials to server for validation
+            fetch('/Account/Login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Login failed');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Redirect user to the chosen room upon successful login
+                var room = document.getElementById("room").value;
+                window.location.href = "/ChatRoom/" + room + "?nickname=" + formData.username;
+            })
+            .catch(error => {
+                console.error('Error logging in:', error);
+                alert('Invalid username or password');
+            });
+        });
+    </script>
+}

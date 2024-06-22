@@ -5,28 +5,64 @@
 <h2>@ViewData["Title"]</h2>
 
 <form id="joinRoomForm">
+    @Html.AntiForgeryToken()
     <div>
-        <label for ="nickname">Nickname:</label>
-        <input type="text" id="nickname" name="nickname" required/>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
     </div>
     <div>
         <label for="room">Room:</label>
-        <input type="text" id="room" name="room" required/>
+        <input type="text" id="room" name="room" required />
     </div>
     <div>
         <button type="submit">Join Room</button>
     </div>
 </form>
 
+
 <script>
     document.getElementById("joinRoomForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent form submission
 
-        // Get selected room and nickname
+        // Get entered username, password, and room
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
         var room = document.getElementById("room").value;
-        var nickname = document.getElementById("nickname").value;
 
-        // Redirect user to the chosen room
-        window.location.href = "/ChatRoom/" + room + "?nickname=" + nickname;
+        // Send login credentials to server for validation
+        fetch('/Account/Login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+            },
+            body: JSON.stringify({
+                username: username,
+                password: password,
+                room: room
+            })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Login failed');
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.success) {
+                // Redirect user to the chosen room upon successful login
+                window.location.href = "/ChatRoom/" + room + "?nickname=" + username;
+            } else {
+                alert('Invalid username or password');
+            }
+        })
+        .catch(error => {
+            console.error('Error logging in:', error);
+            alert('Invalid username or password');
+        });
     });
 </script>

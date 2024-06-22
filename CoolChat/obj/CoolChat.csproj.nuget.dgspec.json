@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj": {}
+    "d:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj": {}
   },
   "projects": {
-    "D:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj": {
+    "d:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj",
+        "projectUniqueName": "d:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj",
         "projectName": "CoolChat",
-        "projectPath": "D:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj",
+        "projectPath": "d:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj",
         "packagesPath": "C:\\Users\\Akku\\.nuget\\packages\\",
-        "outputPath": "D:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\obj\\",
+        "outputPath": "d:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Akku\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.AspNetCore.SignalR": {
               "target": "Package",
               "version": "[1.1.0, )"

@@ -137,3 +137,9 @@ D:\Media\ATH\Semestr_6\ASP.NET\CoolChat\obj\Debug\net8.0\CoolChat.pdb
 D:\Media\ATH\Semestr_6\ASP.NET\CoolChat\obj\Debug\net8.0\CoolChat.genruntimeconfig.cache
 D:\Media\ATH\Semestr_6\ASP.NET\CoolChat\obj\Debug\net8.0\ref\CoolChat.dll
 D:\Media\ATH\Semestr_6\ASP.NET\CoolChat\obj\Debug\net8.0\CoolChat.sourcelink.json
+d:\Media\ATH\Semestr_6\ASP.NET\CoolChat\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+d:\Media\ATH\Semestr_6\ASP.NET\CoolChat\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+d:\Media\ATH\Semestr_6\ASP.NET\CoolChat\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+d:\Media\ATH\Semestr_6\ASP.NET\CoolChat\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+d:\Media\ATH\Semestr_6\ASP.NET\CoolChat\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+d:\Media\ATH\Semestr_6\ASP.NET\CoolChat\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

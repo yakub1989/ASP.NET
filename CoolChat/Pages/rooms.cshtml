@@ -21,9 +21,9 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.7/signalr.min.js"></script>
 <script>
-    function getQueryParam(name) {
+    function getQueryParam(param) {
         const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(name);
+        return urlParams.get(param);
     }
 
     const connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
@@ -71,12 +71,21 @@
         .catch(err => console.error(err.toString()));
 
     function sendMessage() {
-        const user = getQueryParam("nickname"); // Retrieve nickname from URL query parameters
-        const message = document.getElementById("messageInput").value;
-        const room = "@RouteData.Values["room"]";
-        connection.invoke("SendMessage", user, message, room).catch(err => console.error(err.toString()));
-        document.getElementById("messageInput").value = "";
+    const user = getQueryParam("nickname"); // Retrieve nickname from URL query parameters
+    const message = document.getElementById("messageInput").value;
+    const room = "@RouteData.Values["room"]";
+
+    // Check if user is null or empty
+    if (!user) {
+        console.error("Nickname not found in query parameters.");
+        alert("Nickname is required to send a message.");
+        return;
     }
+
+    connection.invoke("SendMessage", user, message, room).catch(err => console.error(err.toString()));
+    document.getElementById("messageInput").value = "";
+}
+
 
     function handleKeyDown(event) {
         if (event.key === "Enter") {
