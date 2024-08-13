@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj": {}
+    "D:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj": {}
   },
   "projects": {
-    "d:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj": {
+    "D:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj",
+        "projectUniqueName": "D:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj",
         "projectName": "CoolChat",
-        "projectPath": "d:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj",
+        "projectPath": "D:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\CoolChat.csproj",
         "packagesPath": "C:\\Users\\Akku\\.nuget\\packages\\",
-        "outputPath": "d:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\obj\\",
+        "outputPath": "D:\\Media\\ATH\\Semestr_6\\ASP.NET\\CoolChat\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Akku\\AppData\\Roaming\\NuGet\\NuGet.Config"

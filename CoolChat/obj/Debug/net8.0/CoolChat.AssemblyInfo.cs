@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CoolChat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+409073c48482b5450d617ca4ee7703e3e52b91f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aeac78736d0a9afb4bfdc914db02e1507b1a2d0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("CoolChat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CoolChat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
